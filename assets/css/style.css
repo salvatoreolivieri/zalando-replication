@@ -41,9 +41,6 @@ h2{
   text-decoration: line-through;
 }
 
-.product-description{
-  text-align: left;
-}
 
 
 /* Products Area */
@@ -57,10 +54,12 @@ section .product{
   margin-top: 30px;
   margin-bottom: 20px;
   display: inline-block;
+  width: 30%;
 }
 
+
 section .product div img{
-  width: 450px;
+  width: 100%;
   padding-right: 10px;
   padding-bottom: 10px;
 }
@@ -70,7 +69,10 @@ section .product div{
 }
 
 
-.sconto, .tipologia-prodotto, .tipologia-prodotto-new{
+
+/* Etichette prodotto */
+
+.sconto, .tipologia-prodotto, .tipologia-prodotto-nosconto{
   background-color: red;
   position: absolute;
   top: 90%;
@@ -84,10 +86,10 @@ section .product div{
 .tipologia-prodotto{
   background-color: #27875A;
   top: 90%;
-  left: 12%;
+  left: 10%;
 }
 
-.tipologia-prodotto-new{
+.tipologia-prodotto-nosconto{
   background-color: #27875A;
   top: 90%;
   left: 0%;
@@ -99,5 +101,21 @@ section .product div{
   background-color: white;
   padding: 20px;
   top: 5%;
-  left: 86%;
+  left: 88%;
 }
+
+
+
+/* Hover */
+
+.unhidden{
+  display: none;
+}
+
+.product-card:hover .hidden{
+  display: none;
+}
+
+.product-card:hover .unhidden{
+  display: block; 
+} 
