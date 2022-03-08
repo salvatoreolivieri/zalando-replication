@@ -13,6 +13,7 @@ body{
   margin: 0 auto;
   width: 80%;
   font-family: sans-serif;
+
 }
 
 
@@ -55,53 +56,54 @@ section .product{
   margin-bottom: 20px;
   display: inline-block;
   width: 30%;
+  padding: 10px;
 }
 
 
 section .product div img{
   width: 100%;
-  padding-right: 10px;
+}
+
+section .product-card{
+  position: relative;
   padding-bottom: 10px;
 }
 
-section .product div{
-  position: relative;
-}
 
 
 
 /* Etichette prodotto */
 
-.sconto, .tipologia-prodotto, .tipologia-prodotto-nosconto{
-  background-color: red;
+.card-promo{
   position: absolute;
-  top: 90%;
-  left: 0%;
-  z-index: 100;
-  padding: 5px;
-  color: white;
+  left: 0;
+  bottom: 40px;
+  text-align: left;
 }
 
+.card-promo strong{
+  color: white;
+  padding: 5px;
+}
+
+.sconto{
+  background-color: red;
+}
 
 .tipologia-prodotto{
   background-color: #27875A;
-  top: 90%;
-  left: 10%;
-}
-
-.tipologia-prodotto-nosconto{
-  background-color: #27875A;
-  top: 90%;
-  left: 0%;
+  bottom: 20px;
+  left: 0px;
 }
 
 .favourite{
   position: absolute;
   z-index: 100;
   background-color: white;
-  padding: 20px;
-  top: 5%;
-  left: 88%;
+  padding: 15px;
+  top: 50px;
+  right: 0;
+  font-size: 20px;
 }
 
 
@@ -117,5 +119,10 @@ section .product div{
 }
 
 .product-card:hover .unhidden{
-  display: block; 
+  display: inline-block; 
 } 
+
+
+span.favourite:hover{
+  color: red;
+}
